@@ -78,6 +78,4 @@ _bmad/custom/*.user.toml
 
 
 # Astro / Documentation Build
-website/.astro/
-website/dist/
 build/

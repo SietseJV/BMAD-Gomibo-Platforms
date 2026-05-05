@@ -13,11 +13,7 @@ If at any time you are unsure what to do, the `bmad-help` skill will help you st
 
 Final important note: Every workflow below can be run directly with your tool of choice via skill or by loading an agent first and using the entry from the agents menu.
 
-<iframe src="/workflow-map-diagram.html" title="BMad Method Workflow Map Diagram" width="100%" height="100%" style="border-radius: 8px; border: 1px solid #334155; min-height: 900px;"></iframe>
-
-<p style="font-size: 0.8rem; text-align: right; margin-top: -0.5rem; margin-bottom: 1rem;">
-  <a href="/workflow-map-diagram.html" target="_blank" rel="noopener noreferrer">Open diagram in new tab ↗</a>
-</p>
+The interactive workflow diagram was removed with the website application.
 
 ## Phase 1: Analysis (Optional)
 

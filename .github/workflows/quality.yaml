@@ -84,10 +84,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build documentation
-        # Note: build-docs.mjs runs link validation internally before building
-        run: npm run docs:build
-
   validate:
     runs-on: ubuntu-latest
     steps:

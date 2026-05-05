@@ -366,5 +366,5 @@ Before submitting documentation changes:
 npm run docs:fix-links            # Preview link format fixes
 npm run docs:fix-links -- --write # Apply fixes
 npm run docs:validate-links       # Check links exist
-npm run docs:build                # Verify no build errors
+npm run docs:validate-links       # Verify internal doc links
 ```
