@@ -246,7 +246,7 @@ class ManifestGenerator {
     for (const moduleName of this.updatedModules) {
       const moduleYamlPath = await resolveInstalledModuleYaml(moduleName);
       if (!moduleYamlPath) {
-        // External modules live in ~/.bmad/cache/external-modules, not src/modules.
+        // External modules live in ~/.bmad/cache/external-modules, not skills/modules.
         // Warn rather than silently skip so missing agent rosters don't vanish
         // from config.toml without notice.
         console.warn(

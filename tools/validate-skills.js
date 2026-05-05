@@ -31,7 +31,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
-const SRC_DIR = path.join(PROJECT_ROOT, 'src');
+const SKILLS_DIR = path.join(PROJECT_ROOT, 'skills');
 
 // --- CLI Parsing ---
 
@@ -580,7 +580,7 @@ function formatHumanReadable(results) {
   const severityCounts = { CRITICAL: 0, HIGH: 0, MEDIUM: 0, LOW: 0 };
 
   output.push(
-    `\nValidating skills in: ${SRC_DIR}`,
+    `\nValidating skills in: ${SKILLS_DIR}`,
     `Mode: ${STRICT ? 'STRICT (exit 1 on HIGH+)' : 'WARNING (exit 0)'}${JSON_OUTPUT ? ' + JSON' : ''}\n`,
   );
 

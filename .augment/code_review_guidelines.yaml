@@ -54,9 +54,9 @@ areas:
   skill_files:
     description: "All skill content — SKILL.md, workflow.md, step files, data files, and templates within skill directories"
     globs:
-      - "src/**/skills/**"
-      - "src/**/workflows/**"
-      - "src/**/tasks/**"
+      - "skills/**/skills/**"
+      - "skills/**/workflows/**"
+      - "skills/**/tasks/**"
     rules:
       - id: "skill_validation"
         description: "Apply the full rule catalog defined in tools/skill-validator.md. That file is the single source of truth for all skill validation rules covering SKILL.md metadata, workflow.md constraints, step file structure, path references, variable resolution, sequential execution, and skill invocation syntax."
@@ -68,7 +68,7 @@ areas:
   agent_definitions:
     description: "Agent YAML configuration files"
     globs:
-      - "src/**/*.agent.yaml"
+      - "skills/**/*.agent.yaml"
     rules:
       - id: "agent_metadata_required"
         description: "Agent files must have metadata section with id, name, title, icon, and module"

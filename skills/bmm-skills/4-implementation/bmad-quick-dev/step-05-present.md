@@ -33,15 +33,15 @@ Format each stop as framing first, link on the next indented line:
 **{Concern name}**
 
 - {one-line framing}
-  [`file.ts:42`](../../src/path/to/file.ts#L42)
+  [`file.ts:42`](../../skills/path/to/file.ts#L42)
 
 - {one-line framing}
-  [`other.ts:17`](../../src/path/to/other.ts#L17)
+  [`other.ts:17`](../../skills/path/to/other.ts#L17)
 
 **{Next concern}**
 
 - {one-line framing}
-  [`file.ts:88`](../../src/path/to/file.ts#L88)
+  [`file.ts:88`](../../skills/path/to/file.ts#L88)
 ```
 
 > The `../../` prefix above is illustrative — compute the actual relative path from `{spec_file}`'s directory to each target file.

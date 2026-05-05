@@ -560,7 +560,7 @@ class Installer {
   }
 
   /**
-   * Sync src/scripts/* → _bmad/scripts/ so shared Python scripts
+   * Sync skills/scripts/* → _bmad/scripts/ so shared Python scripts
    * (e.g. resolve_customization.py) are available at install time.
    * Wipes the destination first so files removed or renamed in source
    * don't linger and get recorded as installed. Also seeds
@@ -568,14 +568,14 @@ class Installer {
    * stay out of version control.
    */
   async _installSharedScripts(paths) {
-    const srcScriptsDir = path.join(paths.srcDir, 'src', 'scripts');
-    if (!(await fs.pathExists(srcScriptsDir))) {
-      throw new Error(`Shared scripts source directory not found: ${srcScriptsDir}`);
+    const sharedScriptsDir = path.join(paths.srcDir, 'skills', 'scripts');
+    if (!(await fs.pathExists(sharedScriptsDir))) {
+      throw new Error(`Shared scripts source directory not found: ${sharedScriptsDir}`);
     }
 
     await fs.remove(paths.scriptsDir);
     await fs.ensureDir(paths.scriptsDir);
-    await fs.copy(srcScriptsDir, paths.scriptsDir, { overwrite: true });
+    await fs.copy(sharedScriptsDir, paths.scriptsDir, { overwrite: true });
     await this._trackFilesRecursive(paths.scriptsDir);
 
     const customGitignore = path.join(paths.customDir, '.gitignore');
@@ -952,7 +952,7 @@ class Installer {
     const nonModuleDirs = new Set(['_config', '_memory', 'memory', 'docs', 'scripts', 'custom']);
     const installedModules = entries.filter((entry) => entry.isDirectory() && !nonModuleDirs.has(entry.name)).map((entry) => entry.name);
 
-    // Add core module to scan (it's installed at root level as _config, but we check src/core-skills)
+    // Add core module to scan (it's installed at root level as _config, but we check skills/core-skills)
     const coreModulePath = getSourcePath('core-skills');
     const modulePaths = new Map();
 

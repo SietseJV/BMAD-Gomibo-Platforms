@@ -30,7 +30,7 @@ export default [
       'test-project-install/**',
       'sample-project/**',
       'tools/template-test-generator/test-scenarios/**',
-      'src/modules/*/sub-modules/**',
+      'skills/modules/*/sub-modules/**',
       '.bundler-temp/**',
       // Lock files — generated, gitignored, not project code
       'pnpm-lock.yaml',
@@ -84,9 +84,9 @@ export default [
     },
   },
 
-  // CLI scripts under tools/**, test/**, and src/scripts/**
+  // CLI scripts under tools/**, test/**, and skills/scripts/**
   {
-    files: ['tools/**/*.js', 'tools/**/*.mjs', 'test/**/*.js', 'test/**/*.mjs', 'src/scripts/**/*.js', 'src/scripts/**/*.mjs'],
+    files: ['tools/**/*.js', 'tools/**/*.mjs', 'test/**/*.js', 'test/**/*.mjs', 'skills/scripts/**/*.js', 'skills/scripts/**/*.mjs'],
     rules: {
       // Allow CommonJS patterns for Node CLI scripts
       'unicorn/prefer-module': 'off',

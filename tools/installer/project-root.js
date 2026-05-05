@@ -18,7 +18,7 @@ function findProjectRoot(startPath = __dirname) {
       try {
         const pkg = fs.readJsonSync(packagePath);
         // Check if this is the BMAD project
-        if (pkg.name === 'bmad-method' || fs.existsSync(path.join(currentPath, 'src', 'core-skills'))) {
+        if (pkg.name === 'bmad-method' || fs.existsSync(path.join(currentPath, 'skills', 'core-skills'))) {
           return currentPath;
         }
       } catch {
@@ -26,8 +26,8 @@ function findProjectRoot(startPath = __dirname) {
       }
     }
 
-    // Also check for src/core-skills as a marker
-    if (fs.existsSync(path.join(currentPath, 'src', 'core-skills', 'agents'))) {
+    // Also check for skills/core-skills as a marker
+    if (fs.existsSync(path.join(currentPath, 'skills', 'core-skills', 'agents'))) {
       return currentPath;
     }
 
@@ -52,13 +52,13 @@ function getProjectRoot() {
  * Get path to source directory
  */
 function getSourcePath(...segments) {
-  return path.join(getProjectRoot(), 'src', ...segments);
+  return path.join(getProjectRoot(), 'skills', ...segments);
 }
 
 /**
  * Get path to a module's directory
- * bmm is a built-in module directly under src/
- * core is also directly under src/
+ * bmm is a built-in module directly under skills/
+ * core is also directly under skills/
  * All other modules are stored remote
  */
 function getModulePath(moduleName, ...segments) {
@@ -74,7 +74,7 @@ function getModulePath(moduleName, ...segments) {
 /**
  * Path to the local external-module clone cache.
  * External official modules (bmb, cis, gds, tea, wds, etc.) are cloned here
- * by ExternalModuleManager during install and are not copied into <src>/modules/.
+ * by ExternalModuleManager during install and are not copied into <skills>/modules/.
  */
 function getExternalModuleCachePath(moduleName, ...segments) {
   const base = process.env.BMAD_EXTERNAL_MODULES_CACHE || path.join(os.homedir(), '.bmad', 'cache', 'external-modules');
@@ -84,7 +84,7 @@ function getExternalModuleCachePath(moduleName, ...segments) {
 /**
  * Locate an installed module's `module.yaml` by filesystem lookup only.
  *
- * Built-in modules (core, bmm) live under <src>. External official modules are
+ * Built-in modules (core, bmm) live under <skills>. External official modules are
  * cloned into ~/.bmad/cache/external-modules/<name>/ with varying internal
  * layouts (some at src/module.yaml, some at skills/module.yaml, some nested).
  * Url-source custom modules are cloned into ~/.bmad/cache/custom-modules/<host>/<owner>/<repo>/
@@ -125,7 +125,7 @@ async function resolveInstalledModuleYaml(moduleName) {
 
     // BMB standard: {setup-skill}/assets/module.yaml (setup skill is any *-setup directory).
     // Check at the repo root, and also under src/skills/ and skills/ since
-    // marketplace plugins commonly nest skills under src/skills/<name>/.
+    // marketplace plugins can nest setup skills under either layout.
     const setupSearchRoots = [root, path.join(root, 'src', 'skills'), path.join(root, 'skills')];
     for (const setupRoot of setupSearchRoots) {
       if (!(await fs.pathExists(setupRoot))) continue;

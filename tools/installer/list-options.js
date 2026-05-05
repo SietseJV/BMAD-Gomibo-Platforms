@@ -20,7 +20,7 @@ async function readModuleCode(yamlPath) {
 
 /**
  * Discover module.yaml files for officials we can read locally:
- *   - core, bmm: bundled in src/ (always present)
+ *   - core, bmm: bundled in skills/ (always present)
  *   - external officials: only if previously cloned to ~/.bmad/cache/external-modules/
  *
  * Each result's `code` is the `code:` field from the module.yaml when present;
@@ -64,13 +64,13 @@ async function discoverOfficialModuleYamls() {
     }
   }
 
-  // Bundled in src/modules/<code>/module.yaml (rare, but supported by getModulePath).
-  const srcModulesDir = path.join(getProjectRoot(), 'src', 'modules');
-  if (await fs.pathExists(srcModulesDir)) {
-    const entries = await fs.readdir(srcModulesDir, { withFileTypes: true });
+  // Bundled in skills/modules/<code>/module.yaml (rare, but supported by getModulePath).
+  const bundledModulesDir = path.join(getProjectRoot(), 'skills', 'modules');
+  if (await fs.pathExists(bundledModulesDir)) {
+    const entries = await fs.readdir(bundledModulesDir, { withFileTypes: true });
     for (const entry of entries) {
       if (!entry.isDirectory()) continue;
-      const yamlPath = path.join(srcModulesDir, entry.name, 'module.yaml');
+      const yamlPath = path.join(bundledModulesDir, entry.name, 'module.yaml');
       if (await fs.pathExists(yamlPath)) {
         await addFound(yamlPath, 'bundled', entry.name);
       }

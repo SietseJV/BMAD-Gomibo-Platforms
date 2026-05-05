@@ -60,29 +60,29 @@ reviews:
     - "!**/validation-report-*.md"
     - "!CHANGELOG.md"
   path_instructions:
-    - path: "src/**"
+    - path: "skills/**"
       instructions: |
         Source file changed. Check whether documentation under docs/ needs
         a corresponding update — new features, changed behavior, renamed
         concepts, altered CLI flags, or modified configuration options should
         all be reflected in the relevant doc pages. Flag missing or outdated
         docs as a review comment.
-    - path: "src/**/skills/**"
+    - path: "skills/**/skills/**"
       instructions: |
         Skill file. Apply the full rule catalog defined in tools/skill-validator.md.
         That document is the single source of truth for all skill validation rules
         covering SKILL.md metadata, workflow.md constraints, step file structure,
         path references, variable resolution, sequential execution, and skill
         invocation syntax.
-    - path: "src/**/workflows/**"
+    - path: "skills/**/workflows/**"
       instructions: |
         Legacy workflow file (pre-skill conversion). Apply the full rule catalog
         defined in tools/skill-validator.md — the same rules apply to workflows
         that are being converted to skills.
-    - path: "src/**/tasks/**"
+    - path: "skills/**/tasks/**"
       instructions: |
         Task file. Apply the full rule catalog defined in tools/skill-validator.md.
-    - path: "src/**/*.agent.yaml"
+    - path: "skills/**/*.agent.yaml"
       instructions: |
         Agent definition file. Check:
         - Has metadata section with id, name, title, icon, and module

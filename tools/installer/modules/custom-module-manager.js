@@ -572,7 +572,7 @@ class CustomModuleManager {
 
     if (!(await fs.pathExists(baseDir))) return null;
 
-    // Try plugin source path first (e.g., "./src/pro-skills")
+    // Try plugin source path first (e.g., "./skills/pro-skills")
     if (pluginSource) {
       const sourcePath = path.join(baseDir, pluginSource);
       const moduleYaml = path.join(sourcePath, 'module.yaml');

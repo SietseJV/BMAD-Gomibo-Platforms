@@ -110,19 +110,19 @@ class OfficialModules {
   async listAvailable() {
     const modules = [];
 
-    // Add built-in core module (directly under src/core-skills)
+    // Add built-in core module (directly under skills/core-skills)
     const corePath = getSourcePath('core-skills');
     if (await fs.pathExists(corePath)) {
-      const coreInfo = await this.getModuleInfo(corePath, 'core', 'src/core-skills');
+      const coreInfo = await this.getModuleInfo(corePath, 'core', 'skills/core-skills');
       if (coreInfo) {
         modules.push(coreInfo);
       }
     }
 
-    // Add built-in bmm module (directly under src/bmm-skills)
+    // Add built-in bmm module (directly under skills/bmm-skills)
     const bmmPath = getSourcePath('bmm-skills');
     if (await fs.pathExists(bmmPath)) {
-      const bmmInfo = await this.getModuleInfo(bmmPath, 'bmm', 'src/bmm-skills');
+      const bmmInfo = await this.getModuleInfo(bmmPath, 'bmm', 'skills/bmm-skills');
       if (bmmInfo) {
         modules.push(bmmInfo);
       }
@@ -209,7 +209,7 @@ class OfficialModules {
     }
     const projectRoot = getProjectRoot();
 
-    // Check for core module (directly under src/core-skills)
+    // Check for core module (directly under skills/core-skills)
     if (moduleCode === 'core') {
       const corePath = getSourcePath('core-skills');
       if (await fs.pathExists(corePath)) {
@@ -217,7 +217,7 @@ class OfficialModules {
       }
     }
 
-    // Check for built-in bmm module (directly under src/bmm-skills)
+    // Check for built-in bmm module (directly under skills/bmm-skills)
     if (moduleCode === 'bmm') {
       const bmmPath = getSourcePath('bmm-skills');
       if (await fs.pathExists(bmmPath)) {
@@ -590,7 +590,7 @@ class OfficialModules {
     const projectRoot = path.dirname(bmadDir);
     const emptyResult = { createdDirs: [], movedDirs: [], createdWdsFolders: [] };
 
-    // Special handling for core module - it's in src/core-skills not src/modules
+    // Special handling for core module - it's in skills/core-skills not skills/modules
     let sourcePath;
     if (moduleName === 'core') {
       sourcePath = getSourcePath('core-skills');
@@ -1177,10 +1177,10 @@ class OfficialModules {
     }
 
     // Load module's config schema from module.yaml
-    // First, try the standard src/modules location
+    // First, try the standard skills/modules location
     let moduleConfigPath = path.join(getModulePath(moduleName), 'module.yaml');
 
-    // If not found in src/modules, we need to find it by searching the project
+    // If not found in skills/modules, we need to find it by searching the project
     if (!(await fs.pathExists(moduleConfigPath))) {
       const moduleSourcePath = await this.findModuleSource(moduleName, { silent: true });
 
@@ -1469,7 +1469,7 @@ class OfficialModules {
     // Load module's config
     let moduleConfigPath = path.join(getModulePath(moduleName), 'module.yaml');
 
-    // If not found in src/modules or custom paths, search the project
+    // If not found in skills/modules or custom paths, search the project
     if (!(await fs.pathExists(moduleConfigPath))) {
       const moduleSourcePath = await this.findModuleSource(moduleName, { silent: true });
 

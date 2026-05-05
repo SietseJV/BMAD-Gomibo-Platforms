@@ -1,11 +1,11 @@
-/**
+﻿/**
  * File Reference Validator
  *
  * Validates cross-file references in BMAD source files (agents, workflows, tasks, steps).
  * Catches broken file paths, missing referenced files, and absolute path leaks.
  *
  * What it checks:
- * - {project-root}/_bmad/ references in YAML and markdown resolve to real src/ files
+ * - {project-root}/_bmad/ references in YAML and markdown resolve to real skills/ files
  * - Relative path references (./file.md, ../data/file.csv) point to existing files
  * - exec="..." and <invoke-task> targets exist
  * - Step metadata (thisStepFile, nextStepFile) references are valid
@@ -32,7 +32,7 @@ const yaml = require('yaml');
 const { parse: parseCsv } = require('csv-parse/sync');
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
-const SRC_DIR = path.join(PROJECT_ROOT, 'src');
+const SKILLS_DIR = path.join(PROJECT_ROOT, 'skills');
 const VERBOSE = process.argv.includes('--verbose');
 const STRICT = process.argv.includes('--strict');
 
@@ -157,19 +157,19 @@ function mapInstalledToSource(refPath) {
   if (isInstallOnly(cleaned)) return null;
 
   // Map installed module names to their source directory names
-  // _bmad/core/ → src/core-skills/, _bmad/bmm/ → src/bmm-skills/
+  // _bmad/core/ -> skills/core-skills/, _bmad/bmm/ -> skills/bmm-skills/
   if (cleaned.startsWith('core/')) {
-    return path.join(SRC_DIR, 'core-skills', cleaned.slice('core/'.length));
+    return path.join(SKILLS_DIR, 'core-skills', cleaned.slice('core/'.length));
   }
   if (cleaned.startsWith('bmm/')) {
-    return path.join(SRC_DIR, 'bmm-skills', cleaned.slice('bmm/'.length));
+    return path.join(SKILLS_DIR, 'bmm-skills', cleaned.slice('bmm/'.length));
   }
   if (cleaned.startsWith('utility/')) {
-    return path.join(SRC_DIR, cleaned);
+    return path.join(SKILLS_DIR, cleaned);
   }
 
-  // Fallback: map directly under src/
-  return path.join(SRC_DIR, cleaned);
+  // Fallback: map directly under skills/
+  return path.join(SKILLS_DIR, cleaned);
 }
 
 // --- Reference Extraction ---
@@ -184,7 +184,7 @@ function isResolvable(refStr) {
 }
 
 function isInstallOnly(cleanedPath) {
-  // Skip paths that only exist in the installed _bmad/ structure, not in src/
+  // Skip paths that only exist in the installed _bmad/ structure, not in skills/
   for (const prefix of INSTALL_ONLY_PATHS) {
     if (cleanedPath.startsWith(prefix)) return true;
   }
@@ -407,7 +407,7 @@ module.exports = { extractCsvRefs };
 // --- Main ---
 
 if (require.main === module) {
-  console.log(`\nValidating file references in: ${SRC_DIR}`);
+  console.log(`\nValidating file references in: ${SKILLS_DIR}`);
   console.log(`Mode: ${STRICT ? 'STRICT (exit 1 on issues)' : 'WARNING (exit 0)'}${VERBOSE ? ' + VERBOSE' : ''}\n`);
 
   const files = getSourceFiles(SRC_DIR);
@@ -499,7 +499,7 @@ if (require.main === module) {
         if (process.env.GITHUB_ACTIONS) {
           const line = ref.line || 1;
           console.log(
-            `::warning file=${relativePath},line=${line}::${escapeAnnotation(`${tag === 'UNRESOLVED' ? 'Unresolved path' : 'Broken reference'}: ${ref.raw} → ${resolved}`)}`,
+            `::warning file=${relativePath},line=${line}::${escapeAnnotation(`${tag === 'UNRESOLVED' ? 'Unresolved path' : 'Broken reference'}: ${ref.raw} ? ${resolved}`)}`,
           );
         }
       }
@@ -521,7 +521,7 @@ if (require.main === module) {
   }
 
   // Summary
-  console.log(`\n${'─'.repeat(60)}`);
+  console.log(`\n${'-'.repeat(60)}`);
   console.log(`\nSummary:`);
   console.log(`   Files scanned: ${files.length}`);
   console.log(`   References checked: ${totalRefs}`);
@@ -561,3 +561,4 @@ if (require.main === module) {
 
   process.exit(hasIssues && STRICT ? 1 : 0);
 }
+

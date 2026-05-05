@@ -1701,7 +1701,7 @@ async function runTests() {
       code: 'tm',
       description: 'desc',
       repository: 'https://github.com/o/r',
-      module_definition: 'src/module.yaml',
+      module_definition: 'skills/module.yaml',
       category: 'software-development',
       subcategory: 'dev-tools',
       trust_tier: 'bmad-certified',
@@ -2011,7 +2011,7 @@ async function runTests() {
           output_folder: '_bmad-output',
         },
         'external-mod': {
-          // No src/modules/external-mod/module.yaml exists; installer treats
+          // No skills/modules/external-mod/module.yaml exists; installer treats
           // this as unknown-schema and falls through. Core-key stripping still
           // applies, so user_name/language must NOT appear under this module.
           custom_setting: 'external-value',
@@ -2026,7 +2026,7 @@ async function runTests() {
       generator35.bmadFolderName = path.basename(tempBmadDir35);
       generator35.updatedModules = ['core', 'bmm', 'external-mod'];
 
-      // collectAgentsFromModuleYaml reads from src/bmm-skills/module.yaml
+      // collectAgentsFromModuleYaml reads from skills/bmm-skills/module.yaml
       await generator35.collectAgentsFromModuleYaml();
       assert(generator35.agents.length >= 6, 'collectAgentsFromModuleYaml discovers bmm agents from module.yaml (>= 6 agents)');
 
@@ -2220,7 +2220,7 @@ async function runTests() {
 
   {
     // Scenario: external official modules (bmb, cis, gds, ...) are cloned into
-    // ~/.bmad/cache/external-modules/<name>/ — NOT copied into src/modules/.
+    // ~/.bmad/cache/external-modules/<name>/ — NOT copied into skills/modules/.
     // collectAgentsFromModuleYaml must resolve them from the cache or their
     // agent roster silently vanishes from config.toml.
     const tempCacheDir38 = await fs.mkdtemp(path.join(os.tmpdir(), 'bmad-ext-cache-'));
@@ -2326,7 +2326,7 @@ async function runTests() {
 
     try {
       const moduleRoot = path.join(tempCacheDir39, 'tea');
-      const moduleSrc = path.join(moduleRoot, 'src');
+      const moduleSrc = path.join(moduleRoot, 'skills');
       await fs.ensureDir(path.join(moduleRoot, '.claude-plugin'));
       await fs.ensureDir(moduleSrc);
 
@@ -2365,7 +2365,7 @@ async function runTests() {
     process.env.BMAD_EXTERNAL_MODULES_CACHE = tempCacheDir39;
 
     try {
-      const moduleDir = path.join(tempRepo39, 'src');
+      const moduleDir = path.join(tempRepo39, 'skills');
       await fs.ensureDir(path.join(tempRepo39, '.claude-plugin'));
       await fs.ensureDir(moduleDir);
 
@@ -2398,7 +2398,7 @@ async function runTests() {
     process.env.BMAD_EXTERNAL_MODULES_CACHE = tempCacheDir39;
 
     try {
-      const moduleDir = path.join(tempRepo39, 'src');
+      const moduleDir = path.join(tempRepo39, 'skills');
       await fs.ensureDir(path.join(tempRepo39, '.claude-plugin'));
       await fs.ensureDir(moduleDir);
 
@@ -2443,7 +2443,7 @@ async function runTests() {
 
     try {
       const moduleRoot = path.join(tempHost39, 'nested-module');
-      const moduleDir = path.join(moduleRoot, 'src');
+      const moduleDir = path.join(moduleRoot, 'skills');
       await fs.ensureDir(path.join(moduleRoot, '.claude-plugin'));
       await fs.ensureDir(moduleDir);
 
@@ -2485,7 +2485,7 @@ async function runTests() {
             code: 'tea',
             name: 'Test Architect',
             repository: 'https://example.com/tea.git',
-            module_definition: 'src/module.yaml',
+            module_definition: 'skills/module.yaml',
             npm_package: 'bmad-method-test-architecture-enterprise',
           },
         ],
@@ -2494,7 +2494,7 @@ async function runTests() {
 
     try {
       const moduleRoot = path.join(tempCacheDir39, 'tea');
-      const moduleSrc = path.join(moduleRoot, 'src');
+      const moduleSrc = path.join(moduleRoot, 'skills');
       await fs.ensureDir(path.join(moduleRoot, '.claude-plugin'));
       await fs.ensureDir(moduleSrc);
 
@@ -3156,8 +3156,8 @@ async function runTests() {
   console.log(`${colors.yellow}Test Suite 43: project_name in core + hoist migration${colors.reset}\n`);
   try {
     const yamlLib = require('yaml');
-    const coreSchemaPath = path.join(__dirname, '..', 'src', 'core-skills', 'module.yaml');
-    const bmmSchemaPath = path.join(__dirname, '..', 'src', 'bmm-skills', 'module.yaml');
+    const coreSchemaPath = path.join(__dirname, '..', 'skills', 'core-skills', 'module.yaml');
+    const bmmSchemaPath = path.join(__dirname, '..', 'skills', 'bmm-skills', 'module.yaml');
     const coreSchema = yamlLib.parse(await fs.readFile(coreSchemaPath, 'utf8'));
     const bmmSchema = yamlLib.parse(await fs.readFile(bmmSchemaPath, 'utf8'));
 
