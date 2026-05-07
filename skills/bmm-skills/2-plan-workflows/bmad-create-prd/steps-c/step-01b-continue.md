@@ -76,10 +76,10 @@ Use the following ordered sequence to determine the next step from the last comp
 | step-04-journeys.md | step-05-domain.md |
 | step-05-domain.md | step-06-innovation.md |
 | step-06-innovation.md | step-07-project-type.md |
-| step-07-project-type.md | step-08-scoping.md |
-| step-08-scoping.md | step-09-functional.md |
-| step-09-functional.md | step-10-nonfunctional.md |
-| step-10-nonfunctional.md | step-11-polish.md |
+| step-07-project-type.md | step-08-functional.md |
+| step-08-functional.md | step-09-nonfunctional.md |
+| step-09-nonfunctional.md | step-10-scoping.md |
+| step-10-scoping.md | step-11-polish.md |
 | step-11-polish.md | step-12-complete.md |
 
 1. Get the last element from the `stepsCompleted` array

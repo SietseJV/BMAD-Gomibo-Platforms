@@ -1,6 +1,6 @@
-# Step 9: Functional Requirements Synthesis
+# Step 8: Functional Requirements Synthesis
 
-**Progress: Step 9 of 11** - Next: Non-Functional Requirements
+**Progress: Step 8 of 12** - Next: Non-Functional Requirements
 
 ## MANDATORY EXECUTION RULES (READ FIRST):
 
@@ -111,7 +111,7 @@ Before presenting to user, validate the FR list:
 
 **Completeness Check:**
 
-1. "Did I cover EVERY capability mentioned in the MVP scope section?"
+1. "Did I cover EVERY capability mentioned in the prior discovery sections?"
 2. "Did I include domain-specific requirements as FRs?"
 3. "Did I cover the project-type specific needs?"
 4. "Could a UX designer read ONLY the FRs and know what to design?"
@@ -166,7 +166,7 @@ Present the functional requirements for review, then display menu:
 
 **What would you like to do?**"
 
-Display: "**Select:** [A] Advanced Elicitation [P] Party Mode [C] Continue to Non-Functional Requirements (Step 10 of 11)"
+Display: "**Select:** [A] Advanced Elicitation [P] Party Mode [C] Continue to Non-Functional Requirements (Step 9 of 12)"
 
 #### Menu Handling Logic:
 - IF A: Invoke the `bmad-advanced-elicitation` skill with the current FR list, process the enhanced capability coverage that comes back, ask user if they accept the additions, if yes update content then redisplay menu, if no keep original content then redisplay menu
@@ -214,6 +214,6 @@ Emphasize to user: "This FR list is now binding. Any feature not listed here wil
 
 ## NEXT STEP:
 
-After user selects 'C' and content is saved to document, load ./step-10-nonfunctional.md to define non-functional requirements.
+After user selects 'C' and content is saved to document, load ./step-09-nonfunctional.md to define non-functional requirements.
 
-Remember: Do NOT proceed to step-10 until user explicitly selects 'C' from the A/P/C menu and content is saved!
+Remember: Do NOT proceed to step-09-nonfunctional until user explicitly selects 'C' from the A/P/C menu and content is saved!

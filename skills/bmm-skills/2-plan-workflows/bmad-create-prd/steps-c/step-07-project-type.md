@@ -1,6 +1,6 @@
 # Step 7: Project-Type Deep Dive
 
-**Progress: Step 7 of 11** - Next: Scoping
+**Progress: Step 7 of 12** - Next: Functional Requirements
 
 ## MANDATORY EXECUTION RULES (READ FIRST):
 
@@ -154,12 +154,12 @@ Present the project-type content for review, then display menu:
 
 **What would you like to do?**"
 
-Display: "**Select:** [A] Advanced Elicitation [P] Party Mode [C] Continue to Scoping (Step 8 of 11)"
+Display: "**Select:** [A] Advanced Elicitation [P] Party Mode [C] Continue to Functional Requirements (Step 8 of 12)"
 
 #### Menu Handling Logic:
 - IF A: Invoke the `bmad-advanced-elicitation` skill with the current project-type content, process the enhanced technical insights that come back, ask user "Accept these improvements to the technical requirements? (y/n)", if yes update content with improvements then redisplay menu, if no keep original content then redisplay menu
 - IF P: Invoke the `bmad-party-mode` skill with the current project-type requirements, process the collaborative technical expertise and validation, ask user "Accept these changes to the technical requirements? (y/n)", if yes update content with improvements then redisplay menu, if no keep original content then redisplay menu
-- IF C: Append the final content to {outputFile}, update frontmatter by adding this step name to the end of the stepsCompleted array, then read fully and follow: ./step-08-scoping.md
+- IF C: Append the final content to {outputFile}, update frontmatter by adding this step name to the end of the stepsCompleted array, then read fully and follow: ./step-09-functional.md
 - IF Any other: help user respond, then redisplay menu
 
 #### EXECUTION RULES:
@@ -217,6 +217,6 @@ When user selects 'C', append the content directly to the document using the str
 
 ## NEXT STEP:
 
-After user selects 'C' and content is saved to document, load `./step-08-scoping.md` to define project scope.
+After user selects 'C' and content is saved to document, load `./step-08-functional.md` to define the product's functional requirements.
 
-Remember: Do NOT proceed to step-08 (Scoping) until user explicitly selects 'C' from the A/P/C menu and content is saved!
+Remember: Do NOT proceed to step-08-functional until user explicitly selects 'C' from the A/P/C menu and content is saved!

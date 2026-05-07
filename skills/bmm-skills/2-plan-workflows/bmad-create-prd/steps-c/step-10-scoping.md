@@ -1,6 +1,6 @@
-# Step 8: Scoping Exercise - Scope Definition (Phased or Single-Release)
+# Step 10: Scoping Exercise - Scope Definition (Phased or Single-Release)
 
-**Progress: Step 8 of 11** - Next: Functional Requirements
+**Progress: Step 10 of 12** - Next: Polish Document
 
 ## MANDATORY EXECUTION RULES (READ FIRST):
 
@@ -30,7 +30,7 @@
 ## CONTEXT BOUNDARIES:
 
 - Complete PRD document built so far is available for review
-- User journeys, success criteria, and domain requirements are documented
+- User journeys, success criteria, functional requirements, and non-functional requirements are documented
 - Focus on strategic scope decisions, not feature details
 - Balance between user value and implementation feasibility
 
@@ -43,8 +43,8 @@ Conduct comprehensive scoping exercise to define release boundaries and prioriti
 ### 1. Review Current PRD State
 
 Analyze everything documented so far:
-- Present synthesis of established vision, success criteria, journeys
-- Assess domain and innovation focus
+- Present synthesis of established vision, success criteria, journeys, and requirement inventory
+- Assess domain, innovation, and quality-attribute focus
 - Evaluate scope implications: simple MVP, medium, or complex project
 - Ask if initial assessment feels right or if they see it differently
 
@@ -63,15 +63,15 @@ Facilitate strategic MVP decisions:
 Use structured decision-making for scope:
 
 **Must-Have Analysis:**
-- Guide identification of absolute MVP necessities
+- Guide identification of absolute MVP necessities from the completed requirements inventory
 - For each journey and success criterion, ask:
   - Without this, does the product fail?
   - Can this be manual initially?
   - Is this a deal-breaker for early adopters?
-- Analyze journeys for MVP essentials
+- Analyze journeys and functional requirements for MVP essentials
 
 **Nice-to-Have Analysis:**
-- Identify what could be added later:
+- Identify what could be added later from the completed requirements set:
   - Features that enhance but aren't essential
   - User types that can be added later
   - Advanced functionality that builds on MVP
@@ -118,7 +118,7 @@ Before proposing any phased approach, review the user's input documents:
 Identify and mitigate scoping risks:
 
 **Technical Risks:**
-"Looking at your innovation and domain requirements:
+"Looking at your innovation, functional requirements, and domain requirements:
 
 - What's the most technically challenging aspect?
 - Could we simplify the initial implementation?
@@ -211,12 +211,12 @@ Present the scoping decisions for review, then display menu:
 - Ask if they'd like to refine further, get other perspectives, or proceed
 - Present menu options naturally as part of conversation
 
-Display: "**Select:** [A] Advanced Elicitation [P] Party Mode [C] Continue to Functional Requirements (Step 9 of 11)"
+Display: "**Select:** [A] Advanced Elicitation [P] Party Mode [C] Continue to Polish Document (Step 11 of 12)"
 
 #### Menu Handling Logic:
 - IF A: Invoke the `bmad-advanced-elicitation` skill with the current scoping analysis, process the enhanced insights that come back, ask user if they accept the improvements, if yes update content then redisplay menu, if no keep original content then redisplay menu
 - IF P: Invoke the `bmad-party-mode` skill with the scoping context, process the collaborative insights on MVP and roadmap decisions, ask user if they accept the changes, if yes update content then redisplay menu, if no keep original content then redisplay menu
-- IF C: Append the final content to {outputFile}, update frontmatter by adding this step name to the end of the stepsCompleted array (also add `releaseMode: phased` or `releaseMode: single-release` to frontmatter based on user's choice), then read fully and follow: ./step-09-functional.md
+- IF C: Append the final content to {outputFile}, update frontmatter by adding this step name to the end of the stepsCompleted array (also add `releaseMode: phased` or `releaseMode: single-release` to frontmatter based on user's choice), then read fully and follow: ./step-11-polish.md
 - IF Any other: help user respond, then redisplay menu
 
 #### EXECUTION RULES:
@@ -258,6 +258,6 @@ When user selects 'C', append the content directly to the document using the str
 
 ## NEXT STEP:
 
-After user selects 'C' and content is saved to document, load ./step-09-functional.md.
+After user selects 'C' and content is saved to document, load ./step-11-polish.md.
 
-Remember: Do NOT proceed to step-09 until user explicitly selects 'C' from the A/P/C menu and content is saved!
+Remember: Do NOT proceed to step-11 (Polish Document) until user explicitly selects 'C' from the A/P/C menu and content is saved!
