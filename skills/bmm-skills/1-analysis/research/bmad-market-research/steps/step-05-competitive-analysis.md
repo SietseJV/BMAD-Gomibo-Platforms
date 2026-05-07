@@ -43,6 +43,7 @@ Start with competitive research approach:
 - Key players and market share
 - Competitive positioning strategies
 - Strengths and weaknesses analysis
+- Gaps in the competitive landscape and underserved needs
 - Market differentiation opportunities
 - Competitive threats and challenges
 
@@ -51,6 +52,16 @@ Start with competitive research approach:
 ### 2. Generate Competitive Analysis Content
 
 Prepare competitive analysis with web search citations:
+
+Before drafting, explicitly analyze where competitors are under-serving the market. Look for:
+
+- Customer needs that multiple competitors acknowledge indirectly but do not solve well
+- Segments, use cases, or price points that appear weakly served
+- Recurring complaints, feature omissions, or positioning blind spots
+- Strategic whitespace between incumbents, challengers, and substitutes
+- Gaps that are attractive because they align with unmet customer needs from earlier steps
+
+Treat this gap analysis as evidence-based opportunity discovery, not as speculative ideation.
 
 #### Content Structure:
 
@@ -79,6 +90,15 @@ _Source: [URL]_
 [SWOT analysis with source citations]
 _Source: [URL]_
 
+### Competitive Landscape Gaps
+
+[Analysis of underserved segments, unmet needs, or weakly served positions in the market with source citations]
+_Underserved Needs: [Important customer needs competitors do not address well]_
+_Segment Gaps: [Customer segments, contexts, or budgets that appear neglected]_
+_Positioning Blind Spots: [Areas where competitors cluster too tightly or leave whitespace]_
+_Fill Potential: [Which gaps appear most viable to target and why]_
+_Source: [URL]_
+
 ### Market Differentiation
 
 [Differentiation analysis with source citations]
@@ -105,6 +125,7 @@ Show the generated competitive analysis and present complete option:
 - Key market players and market share identified
 - Competitive positioning strategies mapped
 - Strengths and weaknesses thoroughly analyzed
+- Gaps in the competitive landscape identified and assessed for fill potential
 - Market differentiation opportunities identified
 - Competitive threats and challenges documented
 
@@ -131,6 +152,7 @@ When user selects 'C', append the content directly to the research document usin
 ✅ Market share analysis completed with source verification
 ✅ Competitive positioning strategies clearly mapped
 ✅ Strengths and weaknesses thoroughly analyzed
+✅ Competitive landscape gaps identified with evidence-backed fill opportunities
 ✅ Market differentiation opportunities identified
 ✅ [C] complete option presented and handled correctly
 ✅ Content properly appended to document when C selected
@@ -142,6 +164,7 @@ When user selects 'C', append the content directly to the research document usin
 
 ❌ Missing key market players or market share data
 ❌ Incomplete competitive positioning analysis
+❌ Not identifying meaningful gaps in the competitive landscape
 ❌ Not identifying market differentiation opportunities
 ❌ Not presenting completion option for research workflow
 ❌ Appending content without user selecting 'C'
@@ -156,6 +179,7 @@ When user selects 'C', append the content directly to the research document usin
 - Use competitor company websites and annual reports
 - Research market research firm competitive analyses
 - Note competitive advantages and disadvantages
+- Compare competitor coverage against customer pain points and unmet needs from prior steps
 - Search for recent market developments and disruptions
 
 ## MARKET RESEARCH COMPLETION:
