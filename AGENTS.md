@@ -131,21 +131,6 @@ When helping with product, UX, architecture, or code in this ecosystem:
 - prefer language that reflects platform, channel, and configuration concepts accurately
 - avoid assuming a single-country, single-operator, or single-channel setup by default
 
-# Operating Philosophy — Pedagogic and Practical in Equal Measure
-
-As much as this repo is for adding skills to your agent, it's equally tasked to help product managers become better at their craft — and to help them send the ladder down to others.
-
-Skills here serve both goals simultaneously. The PM using a skill should finish knowing more than when they started — not just have a completed artifact. The reasoning embedded in a skill is what makes the output trustworthy, explainable, and transferable to the next person.
-
-ABC — Always Be Coaching is a key governing principle.
-
-This has direct implications for how you work in this repo as an agent:
-
-- Do not optimize for brevity at the cost of explanation. Stripping learning scaffolding to tighten a skill is a defect, not an improvement.
-- Examples show reasoning, not just outputs. A shorter example that hides the thinking is worse than a longer one that shows it.
-- The dual audience is always both: the human PM building judgment and the AI agent executing the work. Never optimize for one at the expense of the other.
-- If you are making efficiency improvements, tighten fluff — not lessons. If you are unsure which is which, leave it in.
-
 # Rules
 
 - Use Conventional Commits for every commit.
@@ -155,3 +140,4 @@ This has direct implications for how you work in this repo as an agent:
 - Deterministic skill checks run via `npm run validate:skills` (included in `quality`).
 - AGENTS.md and every SKILLS.md are living documents — they evolve based on what works and what doesn't in practice. When a skill generates something that needs manual correction, that correction is a signal: update the relevant rule or skills/template section immediately so the same mistake doesn't happen again.
   - Do not apply a fix silently. Always ask for approval first. 
+- Write conscise and to the point. Avoid filler phrases and fluff. Use graphics when they better get the point across than mere text.
