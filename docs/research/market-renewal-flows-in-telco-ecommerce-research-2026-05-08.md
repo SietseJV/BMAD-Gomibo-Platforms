@@ -66,34 +66,17 @@ Scope confirmed by user on 2026-05-08.
 
 ### Customer Behavior Patterns
 
-Renewal behavior is usually trigger-based, not browse-based. Customers act when they are near contract end, see an eligibility prompt, want a new device, or realize they are overpaying if they do nothing. Across KPN, Vodafone NL, Odido, O2 UK, EE, Three, and T-Mobile US, the default pattern is: check eligibility first, then show the personal renewal path.
-
-The practical split is consistent across markets: `keep current phone` versus `take a new phone`. Dutch operators make that branch explicit early. UK and US operators add stronger early-upgrade mechanics, but the underlying customer decision is the same.
-_Behavior Drivers: contract-end timing, device age, monthly price sensitivity, trade-in value, and desire for loyalty value._
-_Interaction Preferences: self-service through app/account first, with store, chat, or phone as fallback._
-_Decision Habits: customers want a quick answer to whether they can renew now, whether they should keep their device, and what happens to price and contract length._
+Renewal behavior is usually trigger-based, not browse-based. Customers act when contract-end timing, device age, price pressure, trade-in value, or a loyalty prompt creates a reason to re-evaluate. Across KPN, Vodafone NL, Odido, O2 UK, EE, Three, and T-Mobile US, the pattern is consistent: customers want to check eligibility first, then move into a renewal path that quickly tells them whether to `keep current phone` or `take a new phone`, what that means for monthly price, and what changes in contract length. Interaction preference is also stable across markets: self-service through app or account area first, with store, chat, or phone used mainly when the digital path cannot resolve the case.
 _Source: https://www.kpn.com/mobiel-abonnement/verlengen ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.odido.nl/mobiel-abonnement/verlengen ; https://www.o2.co.uk/help/account/upgrading ; https://ee.co.uk/help/mobile/upgrade/when-can-i-upgrade ; https://www.three.co.uk/support/upgrades ; https://www.t-mobile.com/support/plans-features/upgrade-ready-every-year_
 
 ### Demographic Segmentation
 
-The strongest segment split is not age alone. It is `premium upgraders`, `cost-sensitive keep-my-phone customers`, and `assisted customers with edge cases`. Recent Dutch consumer data supports a replacement market rather than a first-adoption market: smartphone ownership is already high, and many users got their current phone within the last 18 months. That means renewal demand is mainly about replacement timing and value optimization.
-
-Income still matters because device financing and trade-in credits are easier to absorb for higher-spend segments, while lower-pressure segments are more likely to prefer SIM-only renewal. Geography matters less in offer structure than in channel support, because store fallback remains relevant when self-service breaks.
-_Age Demographics: younger and premium-oriented customers are more likely to value frequent upgrades and flagship devices._
-_Income Levels: higher-income users are more open to financed device renewal; value segments lean toward SIM-only or trade-in-supported deals._
-_Geographic Distribution: flows are nationally standardized, but assisted channels still matter for more complex cases._
-_Education Levels: not clearly disclosed by operators; self-service design implies an assumption of digitally confident customers._
+The strongest segmentation is not age alone but renewal intent and complexity: `premium upgraders`, `cost-sensitive keep-my-phone customers`, and `assisted customers with edge cases`. Dutch consumer data supports a replacement market rather than a first-adoption market, so renewal demand is mainly about timing and value optimization. Income still shapes path choice because financed devices and trade-in credits are easier to absorb for higher-spend segments, while lower-pressure segments lean toward SIM-only renewal. Geography matters less in proposition structure than in channel support, and education is rarely explicit in operator research, though most self-service flows clearly assume digitally confident users.
 _Source: https://www.deloitte.com/content/dam/assets-zone2/nl/en/docs/industries/technology-media-telecommunications/2025/deloitte-nl-digital-consumer-trends-preview.pdf ; https://www.kpn.com/mobiel-abonnement/verlengen ; https://www.odido.nl/mobiel-abonnement/verlengen ; https://ee.co.uk/help/mobile/upgrade/when-can-i-upgrade_
 
 ### Psychographic Profiles
 
-Three psychographic profiles recur. First is the `friction minimizer`: wants renewal to feel fast, remembered, and low effort. Second is the `value optimizer`: compares monthly cost, trade-in value, and whether staying is financially smart. Third is the `latest-tech upgrader`: cares about predictable access to the newest device and is more willing to accept installment logic.
-
-Sustainability helps, but it is usually a supporting message rather than the main reason to renew. Trade-in and circularity matter more when they lower the effective price or reduce guilt around upgrading.
-_Values and Beliefs: convenience, loyalty fairness, and confidence that staying should not be a worse deal than switching._
-_Lifestyle Preferences: premium-tech users value faster refresh cycles; pragmatic users value flexibility and lower monthly spend._
-_Attitudes and Opinions: many customers are skeptical of paying too much after minimum term ends._
-_Personality Traits: decisiveness improves when the operator reduces the choice to one clear next step._
+Three psychographic profiles recur across markets: the `friction minimizer`, who wants renewal to feel fast and low effort; the `value optimizer`, who compares monthly cost, trade-in value, and loyalty fairness; and the `latest-tech upgrader`, who wants predictable access to new devices and accepts installment logic more easily. Across all three, the core mindset is similar: customers want confidence that staying is convenient, financially sensible, and not a worse deal than switching. Sustainability supports the story, but it matters most when trade-in or circularity lowers the effective price or reduces guilt around upgrading.
 _Source: https://www.gsma.com/solutions-and-impact/connectivity-for-good/external-affairs/wp-content/uploads/2025/04/Rethinking-Mobile-Phones_Web.pdf ; https://www.kpn.com/mobiel-abonnement/verlengen ; https://www.o2.co.uk/custom-plans/refresh ; https://www.t-mobile.com/support/plans-features/new-in-two-new-and-existing_
 
 ### Customer Segment Profiles
@@ -107,48 +90,31 @@ _Source: https://www.o2.co.uk/help/account/upgrading ; https://ee.co.uk/help/mob
 
 ### Behavior Drivers and Influences
 
-The emotional driver is reassurance. Customers want to know they are not making a bad loyalty decision by staying. The rational driver is payment logic: can they lower cost, spread device cost, or trade in an old phone without hidden downside.
-
-Broader market data points in the same direction. Replacement cycles are lengthening, so operators need stronger upgrade triggers than before. At the same time, contract-end notifications and better-deal prompts push customers to re-evaluate their current tariff instead of passively rolling forward.
-_Emotional Drivers: reassurance, fairness, and fear of overpaying._
-_Rational Drivers: eligibility clarity, monthly price, device payoff rules, and trade-in value._
-_Social Influences: flagship launches, family-account value, and normalization of annual upgrade programs._
-_Economic Influences: longer replacement cycles and cost pressure increase interest in SIM-only and trade-in-led value._
+The emotional driver is reassurance: customers want to know they are not making a bad loyalty decision by staying. The rational driver is payment logic: whether they can lower cost, spread device cost, or trade in an old phone without hidden downside. Replacement cycles are lengthening, so operators need stronger prompts to trigger action, while contract-end notifications, flagship launches, family-account economics, and annual-upgrade norms all shape when customers re-evaluate their current tariff.
 _Source: https://www.ofcom.org.uk/phones-and-broadband/service-quality/end-of-contract-notifications ; https://www.gsma.com/solutions-and-impact/connectivity-for-good/external-affairs/wp-content/uploads/2025/04/Rethinking-Mobile-Phones_Web.pdf ; https://www.t-mobile.com/support/plans-features/upgrade-ready-every-year ; https://ee.co.uk/help/mobile/upgrade/when-can-i-upgrade_
 
 ### Customer Interaction Patterns
 
-The common flow is: reminder or intent trigger -> login or account recognition -> eligibility check -> branch into new device or keep device -> complete digitally or fall back to assisted support. The important point is that renewal is usually treated as an account journey, not an anonymous ecommerce journey.
+The common renewal flow is: reminder or intent trigger -> login or account recognition -> eligibility check -> branch into new device or keep device -> complete digitally or fall back to assisted support. Renewal is therefore an account journey, not an anonymous ecommerce journey.
 
-This means retention depends on low-friction recognition and clear next steps, not just on headline offer quality. If customers cannot tell whether they can renew, or what kind of renewal fits them, the assisted channel becomes part of the default journey.
-_Research and Discovery: account area, app prompts, and “can I renew yet?” checks are the main entry points._
-_Purchase Decision Process: verify eligibility, compare device versus SIM-only, inspect payoff or trade-in consequences, then complete or ask for help._
-_Post-Purchase Behavior: customers care about contract state, bill impact, and device handoff after upgrade._
-_Loyalty and Retention: loyalty rises when the operator makes existing-customer value visible and easy to claim._
+This means retention depends on low-friction recognition and clear next steps, not just on headline offer quality. Entry points are usually the account area, app prompts, or explicit `can I renew yet` checks, and the key interaction requirement is clear recognition of the customer state. Customers want to inspect eligibility, device versus SIM-only choice, and payoff or trade-in consequences before they commit, then confirm contract state, bill impact, and device handoff afterward. Loyalty improves when existing-customer value is visible and easy to claim.
+
 _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.odido.nl/service/abonnement/mobiel/opzeggen-of-verlengen ; https://www.o2.co.uk/help/account/upgrading ; https://www.ofcom.org.uk/phones-and-broadband/service-quality/end-of-contract-notifications_
 
 ## Customer Pain Points and Needs
 
 ### Customer Challenges and Frustrations
 
-The biggest frustration is that renewal looks simple in marketing copy but often behaves like an exception-heavy account process in practice. Customers run into SMS verification failures, “not eligible” conflicts, technical errors late in the flow, or confusing differences between what the app suggests and what the system will actually allow.
+The biggest frustration is that renewal looks simple in marketing copy but often behaves like an exception-heavy account process in practice. Customers run into SMS verification failures, not-eligible conflicts, technical errors late in the flow, or confusing differences between what the app suggests and what the system will actually allow.
 
 This matters because renewal intent is already high at that point. If a user is ready to renew and the journey fails on a technical or state-recognition step, the problem feels less like browsing friction and more like a broken promise.
-_Primary Frustrations: failed login or SMS verification, “you cannot renew yet” conflicts, flow errors after offer selection, and unclear status between offer and checkout._
-_Usage Barriers: account state, open changes, ownership mismatches, and device-condition rules can silently block progress._
-_Service Pain Points: users are often pushed to support or store visits after trying self-service first._
-_Frequency Analysis: community evidence is directional rather than statistical, but the same failure themes recur across multiple operators and years._
 _Source: https://community.kpn.com/facturen-administratie-en-acties-125/mobiel-abonnement-verlengen-lukt-niet-krijg-steeds-error-560428 ; https://community.kpn.com/mobiel-15/kan-abonnement-niet-verlengen-ondanks-verlengaanbod-587349 ; https://community.kpn.com/mobiel-15/ontvang-geen-sms-voor-verlengen-abonnement-hoe-kan-ik-toch-mijn-abonnement-verlengen-563729 ; https://hilfe.o2online.de/o2-mobilfunk-vertrag-tarife-15/vertragsverlaengerung-nicht-moeglich-wegen-technischer-probleme-657847 ; https://hilfe.o2online.de/o2-mobilfunk-vertrag-tarife-15/vertragsverlaengerung-online-nicht-moeglich-621346 ; https://helpforum.sky.com/t5/Sky-Mobile/Why-does-using-the-app-to-upgrade-not-work/td-p/5077113_
 
 ### Unmet Customer Needs
 
-The market gap is not lack of renewal offers. It is lack of transparent renewal-state handling. Customers need to know three things earlier than many operators currently show them: `can I renew now`, `what happens to my current contract or device balance`, and `what is my equivalent keep-device option`.
+The market gap is not lack of renewal offers. It is lack of transparent renewal-state handling. Customers need to know earlier whether they can renew now, what happens to their current contract or device balance, and what their equivalent keep-device option is.
 
-Many flows also under-serve users who want guided digital help without fully switching to assisted sales. Current fallback usually means “contact us” rather than “continue the same renewal case with context preserved”.
-_Critical Unmet Needs: state clarity, explicit keep-device versus new-device branching, visible payoff/trade-in consequences, and preserved context across channels._
-_Solution Gaps: operators explain rules in support content, but often not early enough inside the renewal flow itself._
-_Market Gaps: low-anxiety renewal for messy but common account states remains weakly served._
-_Priority Analysis: highest priority is clarifying eligibility and state consequences before the customer commits effort to device selection._
+Many flows also under-serve users who want guided digital help without fully switching to assisted sales. Current fallback usually means contact us rather than continue the same renewal case with context preserved.
 _Source: https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.odido.nl/service/veelgestelde-vragen/kan-ik-mijn-abonnement-ook-verlengen-met-sim-only/000454192 ; https://www.o2.co.uk/help/products-and-services/offers-and-extras/o2-switch-up-faqs ; https://ee.co.uk/help/mobile/upgrade/about-early-phone-swap-with-ee ; https://www.three.co.uk/support/upgrades/upgrading_
 
 ### Barriers to Adoption
@@ -156,10 +122,6 @@ _Source: https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; http
 The main barrier is complexity, not awareness. Customers usually know renewal exists. What blocks them is uncertainty about whether they qualify, whether the offer is still good once they log in, and whether they are accidentally taking on extra cost.
 
 Price perception is another barrier. If existing-customer economics feel worse than acquisition economics, customers start comparing with switching instead of staying. Technical complexity and trust issues then amplify each other.
-_Price Barriers: fear that loyalty leads to worse pricing than new-customer deals._
-_Technical Barriers: verification failure, opaque eligibility rules, and device-condition requirements._
-_Trust Barriers: mismatch between a visible offer and the real allowed next step reduces confidence fast._
-_Convenience Barriers: app/web self-service often breaks into a phone, store, or chat fallback._
 _Source: https://community.kpn.com/internet-9/verlengen-internet-abonnement-629104 ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://ee.co.uk/help/mobile/upgrade/annual-upgrade ; https://ee.co.uk/help/mobile/upgrade/about-early-phone-swap-with-ee ; https://www.three.co.uk/support/upgrades/upgrading_
 
 ### Service and Support Pain Points
@@ -167,10 +129,6 @@ _Source: https://community.kpn.com/internet-9/verlengen-internet-abonnement-6291
 Support is often the recovery path, but that recovery is weak. When self-service fails, the customer typically has to restart the conversation in another channel. That means repetition, loss of chosen offer context, and lower confidence that the same deal will still be available.
 
 This is especially visible in community threads where moderators or peers route customers back to customer service after app or web failure. The flow is not truly omnichannel; it is serial channel switching.
-_Customer Service Issues: users are redirected rather than recovered in-flow._
-_Support Gaps: limited self-service error explanation and weak continuity into assisted handling._
-_Communication Issues: customers often do not know whether the issue is timing, technical failure, account ownership, or payment status._
-_Response Time Issues: repeated retries and delayed fixes create churn risk around contract-end moments._
 _Source: https://community.kpn.com/mobiel-15/abonnement-verlengen-geen-bevestiging-492184 ; https://community.kpn.com/mobiel-15/zelf-mijn-abonnement-verlengen-met-mijn-eigen-nummer-lukt-niet-619411 ; https://hilfe.o2online.de/o2-mobilfunk-vertrag-tarife-15/vertragsverlaengerung-online-nicht-moeglich-593773 ; https://ee.co.uk/help/mobile/upgrade ; https://helpforum.sky.com/t5/Sky-Mobile/Why-does-using-the-app-to-upgrade-not-work/td-p/5077113_
 
 ### Customer Satisfaction Gaps
@@ -178,10 +136,6 @@ _Source: https://community.kpn.com/mobiel-15/abonnement-verlengen-geen-bevestigi
 The satisfaction gap is mostly an expectation gap. Operators position renewal as easy and personal, but the user experience often becomes rule-heavy exactly when customers expect speed and reassurance. That creates disappointment even when an operator does have a valid manual resolution path.
 
 Value perception is also fragile. If customers believe they need to call, visit a store, or threaten churn to get a fair renewal, the digital journey undermines the retention goal.
-_Expectation Gaps: “easy online renewal” messaging often breaks against real account complexity._
-_Quality Gaps: weak error handling and hidden eligibility logic reduce perceived quality._
-_Value Perception Gaps: loyalty value is doubted when renewal pricing or convenience feels worse than acquisition._
-_Trust and Credibility Gaps: broken self-service makes customers question whether the operator can reliably honor the offer._
 _Source: https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://community.kpn.com/internet-9/verlengen-internet-abonnement-629104 ; https://hilfe.o2online.de/o2-mobilfunk-vertrag-tarife-15/vertragsverlaengerung-nicht-moeglich-wegen-technischer-probleme-657847 ; https://www.o2.co.uk/help/products-and-services/offers-and-extras/o2-switch-up-faqs_
 
 ### Emotional Impact Assessment
@@ -189,10 +143,6 @@ _Source: https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; http
 The emotional impact is stronger than the mechanical issue suggests. Renewal sits close to contract-end timing, billing concerns, and handset replacement needs. When the flow breaks, users feel blocked at a moment that should have been simple.
 
 That creates direct loyalty risk. A broken renewal flow can turn an already-engaged existing customer into an active switcher.
-_Frustration Levels: high when failure happens after login, offer selection, or repeated retries._
-_Loyalty Risks: users explicitly mention considering switching when renewal errors persist._
-_Reputation Impact: repeated community complaints weaken the “easy renewal” proposition._
-_Customer Retention Risks: technical and service friction at renewal creates avoidable churn pressure._
 _Source: https://community.kpn.com/mobiel-15/verlengen-lukt-niet-490031 ; https://hilfe.o2online.de/o2-mobilfunk-vertrag-tarife-15/vertragsverlaengerung-nicht-moeglich-wegen-technischer-probleme-657847 ; https://community.kpn.com/internet-9/verlenging-abonnement-gebeurt-maar-niet-548060_
 
 ### Pain Point Prioritization
@@ -200,10 +150,6 @@ _Source: https://community.kpn.com/mobiel-15/verlengen-lukt-niet-490031 ; https:
 High-priority pain points are the ones that block completion or damage trust early: eligibility ambiguity, failed verification, and lack of state clarity. Medium-priority pain points are weak recovery and poor parity between self-service and assisted channels. Lower-priority pain points are proposition detail issues that appear after the core path already works.
 
 For product design, the main opportunity is not inventing more renewal mechanics. It is making the existing mechanics legible, recoverable, and consistent.
-_High Priority Pain Points: eligibility ambiguity, verification failure, hidden contract/device consequences._
-_Medium Priority Pain Points: weak channel continuity, unclear error messaging, parity doubts._
-_Low Priority Pain Points: lower-order proposition comparison and merchandising issues._
-_Opportunity Mapping: the best opportunity is a renewal journey that translates account state into clear next actions before device shopping begins._
 _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://ee.co.uk/help/mobile/upgrade/about-early-phone-swap-with-ee ; https://www.three.co.uk/support/upgrades/upgrading ; https://hilfe.o2online.de/o2-mobilfunk-vertrag-tarife-15/vertragsverlaengerung-online-nicht-moeglich-621346_
 
 ## Customer Decision Processes and Journey
@@ -213,10 +159,6 @@ _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.
 Renewal is a staged decision, not a single purchase moment. The user first confirms `am I eligible`, then decides `keep my current phone or get a new one`, then checks the consequences for tariff, bill, and device balance. Only after those questions are answered does the offer itself become the main decision.
 
 That sequence is visible across KPN, Vodafone, Odido, O2, Three, AT&T, and T-Mobile. The operators differ in proposition strength, but the decision structure is largely the same.
-_Decision Stages: trigger -> eligibility check -> branch choice -> evaluate consequences -> complete or recover via support._
-_Decision Timelines: the decision window often opens around 4 months before contract end, with some earlier upgrade variants._
-_Complexity Levels: low for straightforward SIM-only renewal, high when device financing, trade-in, or early upgrade rules apply._
-_Evaluation Methods: customers compare monthly cost, device need, eligibility timing, and post-upgrade consequences._
 _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.odido.nl/service/abonnement/mobiel/opzeggen-of-verlengen ; https://www.o2.co.uk/help/account/upgrading ; https://www.three.co.uk/support/upgrades/upgrading ; https://www.att.com/support/article/wireless/KM1002380/ ; https://www.t-mobile.com/support/plans-features/new-in-two-new-and-existing_
 
 ### Decision Factors and Criteria
@@ -224,22 +166,13 @@ _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.
 The primary factor is not the phone itself. It is whether renewal feels financially and operationally safe. Customers weigh current device satisfaction, monthly price, upgrade timing, trade-in or payoff impact, and whether staying looks better than switching.
 
 Secondary factors such as perks, family benefits, and bundle discounts matter once the core state questions are resolved. If those core questions remain unclear, promotional messaging has less effect.
-_Primary Decision Factors: eligibility, monthly price, device need, payoff or trade-in consequence, and tariff change impact._
-_Secondary Decision Factors: loyalty perks, bundle benefits, speed of delivery, and accessory or service extras._
-_Weighing Analysis: customers typically resolve cost and eligibility first, then decide on device and tariff details._
-_Evolution Patterns: value and reassurance matter earlier; proposition features matter later in the flow._
 _Source: https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.kpn.com/mobiel-abonnement/verlengen ; https://www.o2.co.uk/help/pay-monthly/after-you-upgrade ; https://www.att.com/support/article/wireless/KM1002380/ ; https://www.t-mobile.com/support/plans-features/new-in-two-new-and-existing_
 
 ### Customer Journey Mapping
 
 The common journey starts with an external or internal trigger: contract-end timing, app prompt, need for a new phone, or concern about overpaying. The consideration phase begins in account surfaces where the user checks eligibility and sees a personal offer. The decision phase is the branch between `SIM-only / keep current device` and `device upgrade`.
 
-The purchase phase works only when the system makes consequences visible. O2’s post-upgrade help is useful evidence here because it shows the questions customers still need answered after they commit: what happens to their old tariff, first bill, old phone, and reversibility. That reveals the hidden information burden inside the decision itself.
-_Awareness Stage: contract-end reminders, app/account prompts, and handset need recognition._
-_Consideration Stage: eligibility check, offer inspection, and comparison between keep-device and new-device paths._
-_Decision Stage: choose the renewal type and validate bill, tariff, and device implications._
-_Purchase Stage: complete self-service checkout or fall back to assisted support._
-_Post-Purchase Stage: verify bill impact, transfer data, manage old phone, and confirm the contract actually changed as expected._
+The purchase phase works only when the system makes consequences visible. O2's post-upgrade help is useful evidence here because it shows the questions customers still need answered after they commit: what happens to their old tariff, first bill, old phone, and reversibility. That reveals the hidden information burden inside the decision itself.
 _Source: https://www.ofcom.org.uk/phones-and-broadband/saving-money/telecoms-customers-saving-millions ; https://www.o2.co.uk/help/pay-monthly/after-you-upgrade ; https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.odido.nl/service/abonnement/mobiel/opzeggen-of-verlengen_
 
 ### Touchpoint Analysis
@@ -247,10 +180,6 @@ _Source: https://www.ofcom.org.uk/phones-and-broadband/saving-money/telecoms-cus
 The most important touchpoints are digital account surfaces, not generic campaign pages. Web account areas and mobile apps are where eligibility becomes concrete. Support pages and communities then act as secondary touchpoints when the main journey fails or raises questions.
 
 Offline touchpoints still matter for recovery, ID checks, and edge cases. That means renewal is digitally led but not purely digital.
-_Digital Touchpoints: app/account, renewal login, support articles, FAQs, and community threads._
-_Offline Touchpoints: stores, phone support, and scheduled callbacks._
-_Information Sources: official account surfaces first, then support pages, then community or advisor help._
-_Influence Channels: plan prompts, operator messaging, customer support, and comparison behavior around price or device value._
 _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.o2.co.uk/help/products-and-services/o2-services-and-apps/my-o2-app ; https://www.three.co.uk/support/upgrades ; https://www.att.com/support/article/wireless/KM1002380/_
 
 ### Information Gathering Patterns
@@ -258,10 +187,6 @@ _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.
 Customers do not research renewal the same way they research a new provider. They start from their current operator because the key unknown is personal eligibility and consequences, not broad market awareness. The trusted information sources are therefore the logged-in account, the upgrade help pages, and any post-upgrade billing explanation.
 
 When those sources are weak, users look for reassurance in community threads or switch to assisted channels. That is a sign that the formal renewal flow failed to answer a practical question.
-_Research Methods: check account eligibility first, then read support details if something is unclear._
-_Information Sources Trusted: official account areas and official help content rank highest because renewal is personalized._
-_Research Duration: short when eligibility and consequences are clear; much longer when the user needs to validate edge cases._
-_Evaluation Criteria: whether the operator explains timing, cost, old-contract impact, and fallback clearly._
 _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.o2.co.uk/help/pay-monthly/after-you-upgrade ; https://www.att.com/support/article/wireless/KM1002380/ ; https://community.kpn.com/mobiel-15/klopt-de-verlengshop-wel-ik-zie-bij-verlengen-sim-only-terwijl-ik-nu-een-abonnement-met-toestel-heb-646835_
 
 ### Decision Influencers
@@ -269,10 +194,6 @@ _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.o2.co.uk/
 The main influencers are operator prompts, current device condition, household economics, and perceived fairness versus new-customer deals. Peer influence exists, but renewal is more strongly shaped by operator-controlled signals because the journey is personalized and timing-based.
 
 Regulatory notification rules also matter because they create the moment of reconsideration. In practice, the reminder itself is part of the decision system.
-_Peer Influence: moderate, especially around device desirability and perceived deal quality._
-_Expert Influence: limited unless the customer moves into store or advisor support._
-_Media Influence: handset launches and promotional campaigns shape upgrade interest._
-_Social Proof Influence: community threads matter when users are validating whether a renewal issue is normal or resolvable._
 _Source: https://www.ofcom.org.uk/phones-and-broadband/saving-money/end-of-contract-notifications-driving-better-deals-for-customers ; https://www.t-mobile.com/support/plans-features/new-in-two-new-and-existing ; https://community.kpn.com/mobiel-15/klopt-de-verlengshop-wel-ik-zie-bij-verlengen-sim-only-terwijl-ik-nu-een-abonnement-met-toestel-heb-646835_
 
 ### Purchase Decision Factors
@@ -280,10 +201,6 @@ _Source: https://www.ofcom.org.uk/phones-and-broadband/saving-money/end-of-contr
 Immediate triggers are clear eligibility, an acceptable monthly price, and confidence that the account state is understood. Delay happens when there is uncertainty about the remaining device balance, first bill, contract reset, or whether better value exists elsewhere.
 
 Brand loyalty helps, but only when the operator makes that loyalty feel rewarded and easy to act on. Price sensitivity remains high because renewal is one of the few moments where many users actively compare staying with switching.
-_Immediate Purchase Drivers: confirmed eligibility, transparent billing impact, and clear branch choice._
-_Delayed Purchase Drivers: unclear consequences, weak trust, and friction in verification or support._
-_Brand Loyalty Factors: ease, perceived fairness, and continuity of number/account history._
-_Price Sensitivity: high, especially for customers considering SIM-only or comparing against acquisition offers._
 _Source: https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.o2.co.uk/help/pay-monthly/after-you-upgrade ; https://www.att.com/support/article/wireless/KM1002380/ ; https://www.odido.nl/service/abonnement/mobiel/opzeggen-of-verlengen_
 
 ### Customer Decision Optimizations
@@ -291,10 +208,6 @@ _Source: https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; http
 The biggest optimization is to surface decision-critical consequences earlier. Customers should not need to enter deep into device selection before understanding whether their old contract continues, what happens to their bill, or whether early-upgrade rules apply.
 
 The second optimization is continuity. When self-service fails, the next channel should inherit the same renewal case and offer context instead of restarting the journey.
-_Friction Reduction: make eligibility, branch choice, and key consequences visible before detailed offer exploration._
-_Trust Building: explain bill, tariff, and old-device outcomes in plain language before checkout._
-_Conversion Optimization: reduce mid-flow drop-off by translating account state into one recommended next path._
-_Loyalty Building: make existing-customer value explicit and easy to claim in every channel._
 _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.o2.co.uk/help/pay-monthly/after-you-upgrade ; https://www.att.com/support/article/wireless/KM1002380/_
 
 ## Competitive Landscape
@@ -329,18 +242,14 @@ _Source: https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; http
 
 ### Competitive Landscape Gaps
 
-The main gap is `transparent renewal-state handling`. Competitors acknowledge edge cases indirectly through help pages, support content, and community moderation, but few solve them cleanly inside the primary journey. Customers still need better answers to: `can I renew now`, `what happens to my current contract`, `what happens to my current device balance`, and `what should I do if self-service breaks`.
+The main gap is `transparent renewal-state handling`. Competitors acknowledge edge cases indirectly through help pages, support content, and community moderation, but few solve them cleanly inside the primary journey. Customers still need better answers to `can I renew now`, `what happens to my current contract`, `what happens to my current device balance`, and `what should I do if self-service breaks`.
 
 This is a meaningful whitespace because it aligns directly with unmet needs from the earlier sections. It is also more defensible than copying another upgrade mechanic, because it depends on clearer orchestration rather than just new promotional funding.
-_Underserved Needs: state clarity, early branch guidance, and context-preserving fallback._
-_Segment Gaps: users with valid but messy account states are weakly served by current self-service flows._
-_Positioning Blind Spots: competitors cluster around deals and device mechanics, not around low-anxiety renewal._
-_Fill Potential: high, because it improves conversion, trust, and support efficiency at the same time._
 _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.o2.co.uk/help/products-and-services/offers-and-extras/o2-switch-up-faqs ; https://ee.co.uk/help/mobile/upgrade/about-early-phone-swap-with-ee ; https://hilfe.o2online.de/o2-mobilfunk-vertrag-tarife-15/vertragsverlaengerung-online-nicht-moeglich-621346_
 
 ### Market Differentiation
 
-The strongest differentiation is not “more upgrade options.” It is a clearer renewal system that makes consequences explicit before checkout. That includes an early split between `keep current device` and `get a new device`, visible contract and bill consequences, and preserved context when a user moves from digital self-service to assisted handling.
+The strongest differentiation is not more upgrade options. It is a clearer renewal system that makes consequences explicit before checkout. That includes an early split between `keep current device` and `get a new device`, visible contract and bill consequences, and preserved context when a user moves from digital self-service to assisted handling.
 
 For Gomibo Platforms, this is attractive because it can be turned into reusable renewal primitives instead of one-off channel logic.
 _Source: https://www.odido.nl/service/veelgestelde-vragen/kan-ik-mijn-abonnement-ook-verlengen-met-sim-only/000454192 ; https://www.att.com/support/article/wireless/KM1002380/ ; https://www.t-mobile.com/support/plans-features/upgrade-ready-every-year ; https://www.o2.co.uk/help/pay-monthly/after-you-upgrade_
@@ -354,11 +263,9 @@ _Source: https://www.ofcom.org.uk/siteassets/resources/documents/research-and-da
 
 ### Opportunities
 
-The clearest opportunity is to treat renewal as a dedicated lifecycle capability rather than as a thin variant of acquisition checkout. That means configurable support for eligibility-aware branching, state translation, parity across channels, and assisted fallback continuity.
+The clearest opportunity is to productize renewal as a dedicated lifecycle capability instead of treating it as a small variation on acquisition checkout. In practice, that means building a reusable renewal layer that can do four concrete jobs well: determine and explain eligibility, branch early between `keep current device` and `get a new device`, show contract and billing consequences before device selection, and preserve the same renewal case when a customer moves from self-service into assisted support.
 
-This fits both business modes in this repo:
-- `reseller model`: one reusable renewal architecture across multiple operators and contract rules
-- `operator model`: one operator-specific proposition on top of the same core flow primitives
+That opportunity is attractive because it improves several outcomes at once: higher digital completion, lower support fallout, stronger loyalty trust, and better reuse across operators. In the reseller model, the leverage is one configurable renewal engine that can handle multiple operator rule sets without duplicating the journey. In the operator model, the leverage is a clearer operator-specific proposition built on top of the same flow primitives, so teams can vary commercial logic without rebuilding the renewal journey each time.
 _Source: https://www.kpn.com/shop/mobiel/verlengen/login ; https://www.vodafone.nl/support/abonnement-en-rekening/verlengen ; https://www.att.com/support/article/wireless/KM1002380/ ; https://www.t-mobile.com/support/plans-features/new-in-two-new-and-existing_
 
 ## Research Synthesis

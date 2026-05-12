@@ -65,53 +65,51 @@ Treat this gap analysis as evidence-based opportunity discovery, not as speculat
 
 #### Content Structure:
 
-When saving to document, append these Level 2 and Level 3 sections:
+When saving to document, append these Level 2 and Level 3 sections.
+
+Follow the global writing standard in `SKILL.md`. Keep the section structure below, but do not add repeated label summaries beneath the prose unless they add genuinely new information.
 
 ```markdown
 ## Competitive Landscape
 
 ### Key Market Players
 
-[Key players analysis with market share data]
+[State the key competitors in scope and why they matter.]
 _Source: [URL]_
 
 ### Market Share Analysis
 
-[Market share analysis with source citations]
+[Explain the market structure and the implication of share concentration.]
 _Source: [URL]_
 
 ### Competitive Positioning
 
-[Positioning analysis with source citations]
+[Explain the main positioning patterns across competitors.]
 _Source: [URL]_
 
 ### Strengths and Weaknesses
 
-[SWOT analysis with source citations]
+[Explain the main competitive strengths and weaknesses relevant to the topic.]
 _Source: [URL]_
 
 ### Competitive Landscape Gaps
 
-[Analysis of underserved segments, unmet needs, or weakly served positions in the market with source citations]
-_Underserved Needs: [Important customer needs competitors do not address well]_
-_Segment Gaps: [Customer segments, contexts, or budgets that appear neglected]_
-_Positioning Blind Spots: [Areas where competitors cluster too tightly or leave whitespace]_
-_Fill Potential: [Which gaps appear most viable to target and why]_
+[Explain the most important market gap and why it is attractive.]
 _Source: [URL]_
 
 ### Market Differentiation
 
-[Differentiation analysis with source citations]
+[Explain the most defensible differentiation path.]
 _Source: [URL]_
 
 ### Competitive Threats
 
-[Threats analysis with source citations]
+[Explain the main competitive threats and why they matter.]
 _Source: [URL]_
 
 ### Opportunities
 
-[Competitive opportunities analysis with source citations]
+[Explain the strongest concrete opportunity implied by the market and what specifically makes it actionable.]
 _Source: [URL]_
 ```
 

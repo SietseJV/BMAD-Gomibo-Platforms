@@ -98,61 +98,41 @@ Prepare customer behavior analysis with web search citations:
 
 #### Content Structure:
 
-When saving to document, append these Level 2 and Level 3 sections:
+When saving to document, append these Level 2 and Level 3 sections.
+
+Follow the global writing standard in `SKILL.md`. Keep the section structure below, but do not add repeated label summaries beneath the prose unless they add genuinely new information.
 
 ```markdown
 ## Customer Behavior and Segments
 
 ### Customer Behavior Patterns
 
-[Customer behavior patterns analysis with source citations]
-_Behavior Drivers: [Key motivations and patterns from web search]_
-_Interaction Preferences: [Customer engagement and interaction patterns]_
-_Decision Habits: [How customers typically make decisions]_
+[State the main customer behavior pattern and explain why it matters.]
 _Source: [URL]_
 
 ### Demographic Segmentation
 
-[Demographic analysis with source citations]
-_Age Demographics: [Age groups and preferences]_
-_Income Levels: [Income segments and purchasing behavior]_
-_Geographic Distribution: [Regional/city differences]_
-_Education Levels: [Education impact on behavior]_
+[State the segment split that matters most and mention demographic factors only when they materially change the conclusion.]
 _Source: [URL]_
 
 ### Psychographic Profiles
 
-[Psychographic analysis with source citations]
-_Values and Beliefs: [Core values driving customer behavior]_
-_Lifestyle Preferences: [Lifestyle choices and behaviors]_
-_Attitudes and Opinions: [Customer attitudes toward products/services]_
-_Personality Traits: [Personality influences on behavior]_
+[Describe the recurring psychographic profiles and the mindset that matters most.]
 _Source: [URL]_
 
 ### Customer Segment Profiles
 
-[Detailed customer segment profiles with source citations]
-_Segment 1: [Detailed profile including demographics, psychographics, behavior]_
-_Segment 2: [Detailed profile including demographics, psychographics, behavior]_
-_Segment 3: [Detailed profile including demographics, psychographics, behavior]_
+[Explain the 2-4 most relevant segments and why they matter.]
 _Source: [URL]_
 
 ### Behavior Drivers and Influences
 
-[Behavior drivers analysis with source citations]
-_Emotional Drivers: [Emotional factors influencing behavior]_
-_Rational Drivers: [Logical decision factors]_
-_Social Influences: [Social and peer influences]_
-_Economic Influences: [Economic factors affecting behavior]_
+[Explain the main emotional, rational, social, and economic influences.]
 _Source: [URL]_
 
 ### Customer Interaction Patterns
 
-[Customer interaction analysis with source citations]
-_Research and Discovery: [How customers find and research options]_
-_Purchase Decision Process: [Steps in purchase decision making]_
-_Post-Purchase Behavior: [After-purchase engagement patterns]_
-_Loyalty and Retention: [Factors driving customer loyalty]_
+[Explain how customers enter the journey, move through it, and which interaction pattern matters most for conversion or retention.]
 _Source: [URL]_
 ```
 

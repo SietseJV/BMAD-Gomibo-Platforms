@@ -5,7 +5,7 @@ description: 'Conduct market research on competition and customers. Use when the
 
 # Market Research Workflow
 
-**Goal:** Conduct comprehensive market research using current web data and verified sources to produce complete research documents with compelling narratives and proper citations.
+**Goal:** Conduct market research using current web data and verified sources to produce clear, conclusion-led research documents with proper citations.
 
 **Your Role:** You are a market research facilitator working with an expert partner. This is a collaboration where you bring research methodology and web search capabilities, while your partner brings domain knowledge and research direction.
 
@@ -60,6 +60,15 @@ Greet `{user_name}`, speaking in `{communication_language}`.
 Execute each entry in `{workflow.activation_steps_append}` in order.
 
 Activation is complete. Begin the workflow below.
+
+## WRITING STANDARD
+
+- Lead each subsection with the conclusion, not with process narration.
+- Prefer one clear synthesis paragraph over a paragraph followed by several italicized mini-summaries that repeat the same point.
+- Use subsection labels only when they add new information. If `drivers`, `preferences`, or `decision habits` can be expressed more clearly in one paragraph, do that.
+- Keep customer sections easy to scan by reducing duplicate framing and collapsing overlapping findings.
+- Keep concise writing specific. Cut repetition and filler, but do not collapse findings into generic business language or keyword lists that no longer tell the reader what to act on.
+- Preserve source attribution, but avoid boilerplate completeness language such as `comprehensive`, `exhaustive`, or `authoritative` unless it adds real meaning.
 
 ## QUICK TOPIC DISCOVERY
 

@@ -32,7 +32,7 @@
 
 ## YOUR TASK:
 
-Produce a comprehensive, authoritative market research document on **{{research_topic}}** with compelling narrative introduction, detailed TOC, and executive summary based on exhaustive market research.
+Produce a clear, high-signal market research document on **{{research_topic}}** with a concise introduction, useful TOC, and executive summary grounded in the verified research.
 
 ## MARKET RESEARCH COMPLETION SEQUENCE:
 
@@ -77,16 +77,16 @@ Search the web: "market research risk assessment frameworks"
 
 ### 4. Generate Complete Market Research Document
 
-Prepare comprehensive market research document with full structure:
+Prepare the final market research document with a structure that helps the reader find the conclusions quickly:
 
 #### Complete Document Structure:
 
 ```markdown
-# [Compelling Title]: Comprehensive {{research_topic}} Market Research
+# [Specific Title]: {{research_topic}} Market Research
 
 ## Executive Summary
 
-[Brief compelling overview of key market findings and strategic implications]
+[Short overview of the key findings and strategic implications]
 
 ## Table of Contents
 
@@ -100,22 +100,22 @@ Prepare comprehensive market research document with full structure:
 - Implementation Roadmap and Success Metrics
 - Future Market Outlook and Opportunities
 - Market Research Methodology and Source Documentation
-- Market Research Appendices and Additional Resources
+- Source and method notes
 
 ## 1. Market Research Introduction and Methodology
 
 ### Market Research Significance
 
-**Compelling market narrative about why {{research_topic}} research is critical now**
+**Short explanation of why {{research_topic}} matters now**
 _Market Importance: [Strategic market significance with up-to-date context]_
 _Business Impact: [Business implications of market research]_
 _Source: [URL]_
 
 ### Market Research Methodology
 
-[Comprehensive description of market research approach including:]
+[Concise description of the market research approach including:]
 
-- **Market Scope**: [Comprehensive market coverage areas]
+- **Market Scope**: [Market coverage areas]
 - **Data Sources**: [Authoritative market sources and verification approach]
 - **Analysis Framework**: [Structured market analysis methodology]
 - **Time Period**: [current focus and market evolution context]
@@ -349,20 +349,20 @@ _Market Analysis Tools: [Tools and resources for ongoing market analysis]_
 **Source Verification:** All market facts cited with current sources
 **Market Confidence Level:** High - based on multiple authoritative market sources
 
-_This comprehensive market research document serves as an authoritative market reference on {{research_topic}} and provides strategic market insights for informed decision-making._
+_This market research document summarizes the verified findings on {{research_topic}} and highlights the main strategic implications._
 ```
 
 ### 5. Present Complete Market Research Document and Final Option
 
 **Market Research Document Completion Presentation:**
 
-"I've completed the **comprehensive market research document synthesis** for **{{research_topic}}**, producing an authoritative market research document with:
+"I've completed the **market research document synthesis** for **{{research_topic}}**, producing a clear market research document with:
 
 **Document Features:**
 
-- **Compelling Market Introduction**: Engaging opening that establishes market research significance
-- **Comprehensive Market TOC**: Complete navigation structure for market reference
-- **Exhaustive Market Research Coverage**: All market aspects of {{research_topic}} thoroughly analyzed
+- **Clear Market Introduction**: Short opening that establishes the research significance
+- **Useful Market TOC**: Navigation structure focused on the sections readers need
+- **Concise Market Research Coverage**: All key market aspects of {{research_topic}} synthesized clearly
 - **Executive Market Summary**: Key market findings and strategic implications highlighted
 - **Strategic Market Recommendations**: Actionable market insights based on comprehensive research
 - **Complete Market Source Citations**: Every market claim verified with current sources
@@ -376,14 +376,14 @@ _This comprehensive market research document serves as an authoritative market r
 
 **Document Standards Met:**
 
-- Exhaustive market research with no critical gaps
-- Professional market structure and compelling narrative
-- As long as needed for comprehensive market coverage
+- Focused market research with no critical gaps
+- Professional market structure optimized for readability
+- As long as needed for clear market coverage
 - Multiple independent sources for all market claims
 - current market data throughout with proper citations
 
-**Ready to complete this comprehensive market research document?**
-[C] Complete Research - Save final comprehensive market research document
+**Ready to complete this market research document?**
+[C] Complete Research - Save final market research document
 
 **HALT — wait for user response before proceeding.**
 
@@ -392,6 +392,7 @@ _This comprehensive market research document serves as an authoritative market r
 #### If 'C' (Complete Research):
 
 - **Replace** the template placeholder `[Research overview and methodology will be appended here]` in the `## Research Overview` section near the top of the document with a concise 2-3 paragraph overview summarizing the research scope, key findings, and a pointer to the full executive summary in the Research Synthesis section
+- Keep the final synthesis conclusion-led and avoid adding repetitive mini-summary labels beneath prose sections unless they add new information
 - Append the final content to the research document
 - Update frontmatter: `stepsCompleted: [1, 2, 3, 4]`
 - Complete the market research workflow
@@ -402,13 +403,13 @@ When user selects 'C', append the content directly to the research document usin
 
 ## SUCCESS METRICS:
 
-✅ Compelling market introduction with research significance
-✅ Comprehensive market table of contents with complete document structure
-✅ Exhaustive market research coverage across all market aspects
+✅ Clear market introduction with research significance
+✅ Useful market table of contents with clear document structure
+✅ Complete market research coverage without unnecessary verbosity
 ✅ Executive market summary with key findings and strategic implications
 ✅ Strategic market recommendations grounded in comprehensive research
 ✅ Complete market source verification with current citations
-✅ Professional market document structure and compelling narrative
+✅ Professional market document structure and readable synthesis
 ✅ [C] complete option presented and handled correctly
 ✅ Market research workflow completed with comprehensive document
 
