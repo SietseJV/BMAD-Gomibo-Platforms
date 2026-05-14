@@ -8,20 +8,34 @@
 
 ## 2. Short Answer
 
-The store first confirms that the customer is in a renewal context, then checks whether the current proposition and eligibility state permit a device-upgrade path. If device upgrade is not allowed or the offer is explicitly marked as keep-device, the customer is routed into the SIM-only renewal path instead. This appears to be driven by both proposition metadata and eligibility checks, not by one UI toggle alone.
+The store does not choose SIM-only renewal with one simple UI flag. It first establishes that the customer is in a renewal flow, then evaluates whether the current proposition and eligibility state allow the device-upgrade branch. If the upgrade branch is unavailable, blocked, or the proposition is explicitly keep-device, the flow exposes the SIM-only renewal path instead.
 
 ## 3. How It Works
 
-1. Entry point or trigger: The renewal route loads the existing-customer context and proposition type.
-2. Core decision logic: The flow checks whether the proposition supports device upgrade and whether the customer is eligible for that branch.
-3. Important dependencies: Proposition metadata, eligibility service response, and any operator-specific override.
-4. Outcome or side effect: The UI exposes the SIM-only renewal branch when device upgrade is blocked or absent.
+Functional explanation:
+
+1. What decision is being made: The store is deciding whether this renewal flow should offer a device-upgrade path or only a SIM-only renewal path.
+2. What inputs matter to that decision: The decision depends on renewal context, proposition metadata, eligibility state, and any operator-specific override.
+3. How the main branch or fallback works: The system prefers the device-upgrade branch only when that branch exists for the proposition and the customer is eligible for it. If either of those is missing, the flow falls back to SIM-only renewal.
+4. What overrides or restrictions apply: A keep-device marker or operator-specific rule can still force the SIM-only branch even when an upgrade path exists in principle.
+5. Final functional outcome: The user sees the branch that remains valid after proposition support, eligibility, and override rules are all applied.
+
+Exact logic:
+
+1. Full rule set, branch list, or fallback matrix:
+   - If the user is not in a renewal context, this logic does not apply.
+   - If the proposition has no device-upgrade branch, show SIM-only renewal.
+   - If the proposition has a device-upgrade branch but the customer is not eligible, show SIM-only renewal.
+   - If the proposition has a device-upgrade branch and the customer is eligible, check for keep-device or operator-specific override rules.
+   - If a keep-device or operator-specific rule blocks upgrade, show SIM-only renewal.
+   - Only show the device-upgrade path when the proposition supports it, the customer is eligible, and no override blocks it.
 
 ## 4. Conditions and Variants
 
 - Condition: If the customer is not in a renewal context, this branch logic does not apply.
 - Variant: Some operators may expose SIM-only renewal more broadly than device-upgrade renewal.
 - Hidden blocker or fallback: Missing eligibility data may force a fallback state rather than a clean branch decision.
+- Scope note: This answer should describe the full relevant branch logic, not just one happy-path example.
 
 ## 5. Evidence
 

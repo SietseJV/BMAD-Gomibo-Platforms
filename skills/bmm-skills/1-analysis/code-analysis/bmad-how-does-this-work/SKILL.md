@@ -7,6 +7,8 @@ description: Answer targeted codebase questions by locating the relevant impleme
 
 Answer specific implementation questions with evidence-first reasoning. This skill is for narrow questions, not whole-domain mapping. Its default mode is strict: if the evidence is weak, incomplete, or contradictory, do not state the behavior as a fact. Say what is certain, what is inferred, and what remains unknown.
 
+Explain the code in product-friendly language by default. Assume the reader may be a PM, designer, or engineer who needs to understand the behavior, the business meaning of each branch, and where the answer is proven in code. Keep the main explanation focused on functional behavior, not a tour of implementation files. Do not stop at a terse example or shortest-path summary when the real logic has multiple branches, fallbacks, or layers. Walk the full relevant logic path end to end.
+
 ## Conventions
 
 - Use `./references/answer-template.md` as the default output shape.
@@ -46,17 +48,18 @@ If the user does not know where the logic lives:
 
 Use `./agents/code-path-finder.md` when you need a clean discovery pass.
 
-### 3. Trace The Shortest Evidence Chain
+### 3. Trace The Full Relevant Logic
 
-Follow the minimum path needed to explain the behavior:
+Trace the full relevant logic needed to explain the behavior with confidence:
 
 - trigger or entry point
 - core decision logic
+- meaningful branches and guards
 - important dependencies
 - returned outcome or side effect
 - tests or config that confirm the behavior
 
-Do not pad the explanation with unrelated architecture.
+Prefer the smallest complete explanation, not the shortest partial explanation. Include every branch, fallback, override, or validation step that materially changes what the user should believe about the behavior. Keep file-by-file implementation details out of the main explanation unless they are necessary to understand the business behavior. Do not pad the explanation with unrelated architecture.
 
 ### 4. Cross-Check For Hidden Conditions
 
@@ -76,7 +79,10 @@ Use `./agents/certainty-checker.md` when the answer could be brittle or when mul
 Produce a direct explanation using `./references/answer-template.md`:
 
 - answer the question first
-- explain the behavior in PM-readable language
+- explain the behavior in PM-friendly language without dumbing it down
+- explain the full relevant logic path, not just one example branch
+- keep section 3 focused on functional logic; put code-path detail in section 5 evidence
+- when fallbacks or variants exist, enumerate the full rule set instead of giving only one example
 - cite the exact artifacts that support the answer
 - separate facts, inferences, and unknowns
 - include a confidence level
@@ -108,6 +114,8 @@ Default sections:
 6. Confidence
 7. Unknowns or next checks
 
+By default, section 3 should be a full outline of the relevant logic in execution order, written in functional terms. Prefer ordered steps with enough detail that a PM can follow what happens and why, without turning the section into a file walkthrough. Use examples only to clarify a branch, never as a substitute for the actual logic outline. When the logic is effectively a rule matrix, list the full matrix or rule set rather than one or two sample cases.
+
 For very small questions, collapse sections 1 to 4 into a short prose answer, but keep evidence and confidence explicit.
 
 ## Quality Checks
@@ -115,7 +123,11 @@ For very small questions, collapse sections 1 to 4 into a short prose answer, bu
 - Do not answer a different question than the one asked.
 - Do not over-summarize away the decisive branch or condition.
 - Do not convert guesses into facts.
-- Prefer the shortest traceable explanation over a full subsystem tour.
+- Prefer the smallest complete explanation over the shortest traceable explanation.
+- Explain the business meaning of branches and fallbacks in language a PM can reuse.
+- Do not rely on one illustrative example when the actual code has broader logic to outline.
+- Do not let section 3 collapse into a list of files or implementation hops.
+- When defaults, fallbacks, or variants are table-like, enumerate the complete set covered by the code.
 - Call out if the answer differs by `store` versus `Hub`, or by reseller versus operator logic.
 - Flag likely rule drift when different layers appear inconsistent.
 
